@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your book Tours</title>
+    <link rel="stylesheet" href="/static/style.css"></link>
+    <meta name ="viewport" contetnt="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <style>
+    body {
+        background-image: url(/static/background.jpg);background-size: cover;background-position: center;background-attachment: fixed;
+    }
+    </style>
+</head>
+<body>
+    <a href="/welcome"><img class="logo" src="/static/logo2.gif"></a>
+    <div class="header">
+        <button class="btn"><a href="/logout" style="text-decoration: none;">Log Out</a></button>
+    </div><br><br><br><br><hr>
+    <center>
+        <form action="/addingtriptoyourtable" method="post">
+            <p style="color: whitesmoke;font-size: 30px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Booking your trip for {{ebooks[1]}}🏖️</p>
+            <hr>
+            <table border="1px">
+                <tr>
+                    <td class="subline">Please enter your correct name to CONFIRM :</td><td><input type="text" name="fname" id="fname"></td>
+                </tr>
+                <tr>
+                    <td class="subline">Location :</td><td><input type="text" name="location" id="location" value="{{ebooks[1]}}" readonly></td>
+                </tr>
+                <tr>
+                    <td class="subline">Trip Date :</td><td><input type="date" name="trip_date" id="trip_date" value="{{ebooks[2]}}" readonly></td>
+                </tr>
+                <tr>
+                    <td class="subline">Transpot MODE :</td><td><input type="text" name="trasnpot" id="trasnpot" value="{{ebooks[3]}}" readonly></td>
+                </tr>
+                <tr>
+                    <td class="subline">Days :</td><td><input type="text" name="days" id="days" value="{{ebooks[4]}}" readonly></td>
+                </tr>
+                <tr>
+                    <td class="subline">Amount :</td><td><input type="number" name="amount" id="amount" value="{{ebooks[5]}}" readonly></td>
+                </tr>
+                
+            </table>
+            <br><br>
+            <button class="btn"><a href="/logout" style="text-decoration:line-through;background-color: #fff;background-size: 100%;color: #000;">Cancel</a></button>
+            <button class="btn" style="color: #fff;"><input type="submit" value="submit"></button>
+        </form></center>
+</body>
+</html>
+

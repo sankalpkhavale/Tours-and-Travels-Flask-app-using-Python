@@ -1,0 +1,83 @@
+*
+.line{
+  font-weight: bolder;
+  color: rgb(249, 249, 252);;
+}
+.header {
+    padding: 20px 16px;
+    background: transparent;
+    color: #f1f1f1;
+    float: right;  
+}
+.logo
+{
+    width: 350px;
+    float: left;
+    border-radius: 200px;
+}
+.btn 
+{
+  outline: 0 !important;
+  text-decoration: none;
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+
+.content-table
+{
+  height: 50vh;
+  display: grid;
+  place-items: center;
+}
+table{
+  width: 400px;
+  box-shadow: -1px 12px  12px -6px rgba(0,0,0,0.5);
+}
+table,tr,td,th,thead{
+  padding: 5px;
+  border: 2px solid white;
+  border-collapse: collapse;
+  text-align: center;
+}
+td{
+  font-size: 16px;
+}
+
+
+/**/
+.subline{
+  color: azure;
+  width: 10em;
+  font-weight: bold;
+  text-overflow:ellipsis;
+}
+
+
+

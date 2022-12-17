@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>details page</title>
+    <link rel="stylesheet" href="/static/tablestyle.css"></link>
+    
+    <style>
+    body {
+        background-image: url(/static/background.jpg);background-size: cover;background-position: center;background-attachment: fixed;
+    }
+    </style>
+</head>
+<center>
+<body>
+    <a href="/welcome"><img class="logo" src="/static/logo2.gif"></a>    
+    
+        
+        <div class="content-table">
+        <table border="2px" style="font-weight: bolder;">
+            <thead><td style="color: white; background-color: blue;">fname</td><td style="color: white; background-color: blue;">lName</td><td style="color: white; background-color: blue;">email</td><td style="color: white; background-color: blue;">password</td><td style="color: white; background-color: blue;">contact</td><td style="color: white; background-color: blue;">address</td><td style="color: white; background-color: blue;">Profile created date</td></thead>
+            {% for i in elist %}
+            <tr>
+                <td>{{i[1]}}</td>
+                <td>{{i[2]}}</td>
+                <td>{{i[3]}}</td>
+                <td>{{i[4]}}</td>
+                <td>{{i[5]}}</td>
+                <td>{{i[6]}}</td>
+                <td>{{i[7]}}</td>
+                
+            {% endfor %}  
+              
+            </tr>
+            
+        </table></div>
+</body>
+</center>
+</html>
